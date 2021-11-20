@@ -1,0 +1,42 @@
+.hero-img, .banner-img {
+  width: 100%;
+}
+
+.hero-container {
+  position: relative;
+}
+
+.hero-link {
+  position: absolute;
+  right: 7rem;
+  bottom: 5rem;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.featured-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.featured-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 2rem;
+}
+
+.featured-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
