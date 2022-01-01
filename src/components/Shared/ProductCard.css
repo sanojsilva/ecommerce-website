@@ -1,5 +1,7 @@
 .product-card {
   text-align: center;
+  text-decoration: none;
+  color: black;
 }
 
 .product-card-img {

@@ -1,0 +1,42 @@
+.login-container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  min-width: 30vw;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  margin: 0;
+}
+
+input {
+  padding-top: 0.9rem; 
+  padding-bottom: 0.9rem; 
+  padding-left: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 1px solid black;
+}
+
+.bottom-link {
+  text-decoration: none;
+  color: black;
+  padding: 1.2rem;
+}

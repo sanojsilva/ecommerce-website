@@ -8,14 +8,31 @@ import Topbar from "./components/Layout/Topbar";
 import "./components/Layout/Layout.css";
 import Navbar from "./components/Layout/Navbar";
 import Categoriesbar from "./components/Layout/Categoriesbar";
+import Profile from "./pages/Profile";
+import { useAtom } from "jotai";
+import { userAtom } from "./state";
+import { useEffect } from "react";
+import Cart from "./components/Layout/Cart";
+import ProductDetails from "./pages/ProductDetails";
+import Checkout from "./pages/Checkout";
 
 function App() {
+  const [user, setUser] = useAtom(userAtom);
+
+  useEffect(() => {
+    const sessionUser = JSON.parse(sessionStorage.getItem("user"));
+    if (sessionUser) {
+      setUser(sessionUser);
+    }
+  }, []);
+
   return (
     <div>
       <BrowserRouter>
         <Topbar />
         <Navbar />
         <Categoriesbar />
+        <Cart isCheckout={false} />
         <Switch>
           <Route path="/" exact>
             <Home />
@@ -28,6 +45,15 @@ function App() {
           </Route>
           <Route path="/register" exact>
             <Register />
+          </Route>
+          <Route path="/profile" exact>
+            <Profile />
+          </Route>
+          <Route path="/product-details/:id" exact>
+            <ProductDetails />
+          </Route>
+          <Route path="/checkout" exact>
+            <Checkout />
           </Route>
         </Switch>
         <h1>Footer</h1>

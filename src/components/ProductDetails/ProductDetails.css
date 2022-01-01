@@ -1,0 +1,45 @@
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3rem;
+}
+
+/* price */
+.product-info div {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.product-info p {
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.product-info input {
+  max-width: 5rem;
+  border: 1px solid black;
+  font-size: 1.3rem;
+  padding: 0.4rem;
+  outline: none;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.product-info button {
+  background-color: transparent;
+  color: black;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-height: 700px;
+}
+
+
+
