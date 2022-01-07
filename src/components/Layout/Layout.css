@@ -23,6 +23,11 @@
   letter-spacing: 0.1rem;
 }
 
+.navbar-logo a {
+  text-decoration: none;
+  color: black;
+}
+
 .navbar-btns {
   display: flex;
   align-items: center;
@@ -133,6 +138,36 @@
   font-size: 1.5rem;
   margin-right: 1rem;
   cursor: pointer;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.footer-logo {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.footer-item {
+  min-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-item-title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+.footer-item-list div {
+  padding: 0.2rem 0;
 }
 
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 function ShippingDetailsForm(props) {
-  const { values, setValues } = props;
+  const { values, setValues, setStep } = props;
 
   return (
     <div>
@@ -53,6 +53,13 @@ function ShippingDetailsForm(props) {
           }}
         />
       </form>
+      <button
+        onClick={() => {
+          setStep(1);
+        }}
+      >
+        Next
+      </button>
     </div>
   );
 }

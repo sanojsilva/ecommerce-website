@@ -24,14 +24,23 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar-callus">Call Us : 0114 55 88 28</div>
-      <div className="navbar-logo">Avenue</div>
+      <div className="navbar-logo">
+        <Link to="/">Avenue</Link>
+      </div>
       <div className="navbar-btns">
         {!user && (
           <Link to="/login" className="login-button">
             Login
           </Link>
         )}
-        {user && <div>{user.username}</div>}
+        {user && (
+          <Link
+            to="/profile"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            {user.username}
+          </Link>
+        )}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="nav-icon"

@@ -26,3 +26,17 @@ button {
   letter-spacing: 0.15rem;
   border: 1px solid black;
 }
+
+.name-on-card {
+  width: 100%;
+}
+
+.card-form-middle-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.card-form-middle-row input {
+  width: 100%;
+}

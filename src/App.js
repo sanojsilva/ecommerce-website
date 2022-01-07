@@ -15,6 +15,8 @@ import { useEffect } from "react";
 import Cart from "./components/Layout/Cart";
 import ProductDetails from "./pages/ProductDetails";
 import Checkout from "./pages/Checkout";
+import Footer from "./components/Layout/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [user, setUser] = useAtom(userAtom);
@@ -28,6 +30,7 @@ function App() {
 
   return (
     <div>
+      <Toaster position="bottom-right" />
       <BrowserRouter>
         <Topbar />
         <Navbar />
@@ -56,7 +59,7 @@ function App() {
             <Checkout />
           </Route>
         </Switch>
-        <h1>Footer</h1>
+        <Footer />
       </BrowserRouter>
     </div>
   );

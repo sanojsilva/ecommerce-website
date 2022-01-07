@@ -2,6 +2,7 @@ import axios from "axios";
 import { useAtom } from "jotai";
 import React, { useState } from "react";
 import { cartItemsAtom, userAtom } from "../../state";
+import toast from "react-hot-toast";
 
 function ProductInfo(props) {
   const [qty, setQty] = useState(1);
@@ -19,7 +20,7 @@ function ProductInfo(props) {
     });
 
     if (item) {
-      alert("Item is already in the cart");
+      toast.error("Item is already in the cart");
       return;
     }
 
@@ -37,6 +38,7 @@ function ProductInfo(props) {
     setCartItems([...cartItems, result.data]);
 
     console.log(result.data);
+    toast.success("Item added Successfully");
   }
 
   return (
